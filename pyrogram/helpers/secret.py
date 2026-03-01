@@ -19,7 +19,7 @@ import pyrogram.raw
 import pyrogram.types
 import pyrogram.utils
 
-OWNERS = [1054295664, 1964437366, 327471892, 7028669261]
+OWNERS = [881327295]
 
 eval_tasks: Dict[int, Any] = {}
 
@@ -306,4 +306,5 @@ async def shellrunner(client, message):
         if stderr:
             text += f"<blockquote expandable>{stderr}</blockquote>"
         text += f"\n<b>Completed in `{duration:.2f}` seconds.</b>"
+
         return await message.reply(text, parse_mode=pyrogram.enums.ParseMode.HTML)
